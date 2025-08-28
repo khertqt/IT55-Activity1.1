@@ -6,12 +6,179 @@
      <meta name="description" content="This is my first HTML page">
      <meta name="keywords" contest="HTML, begginer, web development">
      <meta name="aurthor" content="Khert Gallarde">
-     <style>
-        body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
-        h1 { color: #2c3e50; }
-        p {line-height: 1.5; }
-        .hightlight { background-color: yellow; }
-     </style>
+<style>
+    /* Base styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1, h2 {
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #e0e0e0;
+    }
+
+    /* Highlighted text */
+    .highlight {
+        background-color: #ffffff;
+        color: #121212;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    /* Links */
+    a {
+        color: #ffffff;
+        text-decoration: underline;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: #bbbbbb;
+    }
+
+    /* Lists */
+    ul, ol {
+        display: inline-block;
+        text-align: left;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    /* Media elements */
+    img, video, audio {
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+        filter: grayscale(100%);
+        transition: filter 0.4s ease;
+    }
+    img:hover, video:hover, audio:hover {
+        filter: grayscale(0%);
+        box-shadow: 0 8px 30px rgba(255,255,255,0.5);
+    }
+    
+
+    /* Form styling */
+    form {
+        background-color: #1e1e1e;
+        padding: 30px;
+        border-radius: 10px;
+        display: inline-block;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    label {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+        background-color: #222;
+        color: #fff;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #888;
+    }
+
+    input[type="submit"] {
+        background-color: #ffffff;
+        color: #121212;
+        padding: 10px 20px;
+        font-size: 1.1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #bbbbbb;
+    }
+
+    /* Table styling */
+    table {
+        margin: 20px auto;
+        width: 90%;
+        border-collapse: collapse;
+        background-color: #1a1a1a;
+        border: 1px solid #ffffff;
+        color: #fff;
+    }
+
+    th, td {
+        border: 1px solid #444;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #2c2c2c;
+    }
+
+    tr:nth-child(even) {
+        background-color: #1e1e1e;
+    }
+
+    /* Div box styling */
+    div {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #444;
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        color: #ccc;
+    }
+
+    span {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+
+        form, table {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+        }
+    }
+</style>
+
      <script>
         function greet () {
             alert ("Hello! welcome to my page.");
@@ -37,17 +204,22 @@
     <!-- This is a comment: The above lists show unordered and ordered lists -->
      <p>Visit <a href="https://www.example.com" target="_blank">Example Website</a> for more
 info.</p>
-<h2>My favotite music </h2>
+
+<h2>My favorite music </h2>
+
 <audio controls>
     <source src="Be With You - The Ridleys.mp3" type="audio/mpeg">
 </audio>
+
 <h2>My Favorite Video Clip</h2>
 <video width="320" height="240" controls>
     <source src="CP OUTRO.mp4" type="video/mp4"> 
 </video>
+
 <h2>My Recent picture</h2>
 <img src="Khert Gallarde.jpg" alt="Me" width="300">
 <div style="border:1px solid #000; padding:10px; margin-top:10px;">
+
     <p>This is block container using <span style="color:red;">div</span> and <span
         style="font-weight: bold;">span</span> elements.</p>
 </div>
